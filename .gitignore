@@ -24,6 +24,10 @@ omnigent/_build_info.py
 # Exception: track .github/ (CI workflows).
 !.github/
 
+# Exception: track .reffy/ (Reffy/ReffySpec config, instructions, skills, specs).
+# The .*/ rule above would otherwise exclude everything under .reffy/.
+!.reffy/
+
 # Exception: track .claude/skills/ (project-wide dev-time skills for Claude Code).
 # The .*/ rule above would otherwise exclude everything under .claude/.
 !.claude/
